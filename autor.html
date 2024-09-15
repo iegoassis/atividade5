@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Autor - AquaPet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com logo e navegação -->
+    <header>
+        <div class="logo">
+            <img src="Figma/logo.png" width="40" height="30">
+            <h1>AquaPet</h1>
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Detalhes.html">Detalhes</a></li>
+                <li><a href="autor.html">Autor</a></li>
+                <li><a href="Admin.html">Admin</a></li>
+            </ul>
+
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section class="about-author">
+            <h2>Sobre o Autor</h2>
+            <p>Meu nome é Iego Assis da Silva, sou o criador do AquaPet. Com paixão por animais e anos de experiência no cuidado de pets, desenvolvi esse projeto para oferecer um serviço de qualidade, onde o bem-estar do seu pet é sempre a prioridade.</p>
+            <p>Nosso objetivo é garantir que seu animal de estimação receba o melhor cuidado possível em um ambiente seguro e acolhedor.</p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <a href="autor.html">Saiba mais sobre o autor</a>
+        <p>&copy; 2024 Iego Assis da Silva - AquaPet - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('nav-menu-visible');
+        });
+    </script>
+
+</body>
+</html>

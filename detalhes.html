@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes - AquaPet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com logo e navegação -->
+    <header>
+        <div class="logo">
+            <img src="Figma/logo.png" width="40" height="30">
+            <h1>AquaPet</h1>
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Detalhes.html">Detalhes</a></li>
+                <li><a href="autor.html">Autor</a></li>
+                <li><a href="Admin.html">Admin</a></li>
+            </ul>
+
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section class="details">
+            <h2>Serviços Personalizados para o Seu Pet</h2>
+            <p>Na AquaPet, oferecemos diversos serviços de cuidados para seu pet, todos adaptados às necessidades e preferências de cada cliente. Veja abaixo os serviços que proporcionam uma experiência completa para seu amigo de quatro patas:</p>
+
+            <ul>
+                <li>Banho Completo: Limpeza e hidratação da pele e pelagem.</li>
+                <li>Banho Simples: Somente Banho.</li>
+                <li>Tosa: Modelagem e corte de pelagem para diferentes raças.</li>
+                <li>Hidratação: Tratamento especial para pelagens ressecadas.</li>
+                <li>Limpeza de Orelhas e Cortes de Unhas.</li>
+            </ul>
+
+            <a href="cadastro.html" class="cta-button">Agendar Serviço</a>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <a href="autor.html">Saiba mais sobre o autor</a>
+        <p>&copy; 2024 Iego Assis da Silva - AquaPet - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('nav-menu-visible');
+        });
+    </script>
+
+</body>
+</html>
