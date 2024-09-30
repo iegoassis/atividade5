@@ -133,3 +133,18 @@ p.text1 {
   align-items: center;
   gap: var(--size-3);
 }
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-menu.nav-menu-visible {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+}
